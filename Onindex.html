@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        h2, h4 {
+            text-align: center;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+
+        button[type="reset"] {
+            background-color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>အချက်အလက်ဖြည့်ပေးပါ</h2>
+        <form action="https://postimages.org/" method="get">
+            <label>Username:</label>
+            <input type="text" required>
+
+            <label>Password:</label>
+            <input type="password" required>
+
+            <label>Email:</label>
+            <input type="email" required>
+
+            <h4>နိုင်ငံ</h4>
+            <select required>
+                <option>Myanmar</option>
+                <option>Thailand</option>
+                <option>Japan</option>
+            </select>
+
+            <label>Comment:</label>
+            <textarea rows="4"></textarea>
+
+            <button type="submit">Login</button>
+            <button type="reset">Clear</button>
+        </form>
+    </div>
+</body>
+</html>
